@@ -261,7 +261,7 @@ namespace Uchu.Core
         /// </summary>
         /// <param name="assembly">The Uchu instance to start</param>
         /// <param name="acceptConsoleCommands">Whether to handle console commands or not</param>
-        public async Task StartAsync(Assembly assembly, bool acceptConsoleCommands = false)
+        public async Task StartAsync(Assembly assembly, bool acceptConsoleCommands = true)
         {
             using (SentrySdk.Init(Config.SentryDsn))
             {
